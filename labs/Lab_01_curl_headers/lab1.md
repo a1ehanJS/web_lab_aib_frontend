@@ -2,28 +2,27 @@
 ### РГУПС
 #### curl rgups.ru -I -L -v
 
-`Trying 80.72.224.90:80...` ***попытка соединения по IP***  
-`Connected to rgups.ru (80.72.224.90) port 80 (#0)` ***соединено с сайтом РГУПС (его IP и номер порта)***  
+`Trying 80.72.224.90:80...` ***попытка соединения по IP***\
+`Connected to rgups.ru (80.72.224.90) port 80 (#0)` ***соединено с сайтом РГУПС (его IP и номер порта)***\
+`HEAD / HTTP/1.1` *** HTTP-метод HEAD запрашивает заголовки, идентичные тем, что возвращаются, если указанный ресурс будет запрошен с помощью HTTP-метода***\
+`Host: rgups.ru` ***имя хоста***\
+`User-Agent: curl/8.0.1` ***тип юзер агента, с которого был выполнен запрос, в данном случае юзер агент curl***\
+`Accept: */*`
 
-> HEAD / HTTP/1.1 --- HTTP-метод HEAD запрашивает заголовки, идентичные тем, что возвращаются, если указанный ресурс будет запрошен с помощью HTTP-метода
-> Host: rgups.ru --- имя хоста
-> User-Agent: curl/8.0.1 --- тип юзер агента, с которого был выполнен запрос, в данном случае юзер агент curl
-> Accept: */*
->
-< HTTP/1.1 301 Moved Permanently
-HTTP/1.1 301 Moved Permanently
-< Server: nginx/1.19.1
-Server: nginx/1.19.1
-< Date: Thu, 14 Sep 2023 19:48:07 GMT
-Date: Thu, 14 Sep 2023 19:48:07 GMT
-< Content-Type: text/html
-Content-Type: text/html
-< Content-Length: 169
-Content-Length: 169
-< Connection: keep-alive
-Connection: keep-alive
-< Location: <https://rgups.ru/>
-Location: <https://rgups.ru/>
+HTTP/1.1 301 Moved Permanently\
+HTTP/1.1 301 Moved Permanently\
+Server: nginx/1.19.1\
+Server: nginx/1.19.1\
+Date: Thu, 14 Sep 2023 19:48:07 GMT\
+Date: Thu, 14 Sep 2023 19:48:07 GMT\
+Content-Type: text/html\
+Content-Type: text/html\
+Content-Length: 169\
+Content-Length: 169\
+Connection: keep-alive\
+Connection: keep-alive\
+Location: <https://rgups.ru/>\
+Location: <https://rgups.ru/>\
 
 <
 
