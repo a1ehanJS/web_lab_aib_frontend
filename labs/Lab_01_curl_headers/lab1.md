@@ -48,9 +48,8 @@
 `Set-Cookie: wire=22919ceef6dbf12346142130cc5701a7; path=/; HttpOnly; SameSite=Lax` ***используется для отправки cookie-файла с сервера пользовательскому агенту, чтобы пользовательский агент мог отправить его обратно на сервер позже***\
 `Expires: Thu, 19 Nov 1981 08:52:00 GMT` ***попытка отключить кэширование. Дата - день рождения одного из разработчиков расширения session для PHP***\
 `Cache-Control: no-store, no-cache, must-revalidate` ***Поле Cache-Control заголовка HTTP содержит директивы (инструкции), которые управляют кэшированием в браузерах и совместно используемых кэшах. В данном случае полное отсутствие кэширования***\
-`Pragma: no-cache` ***Он используется для обратной совместимости с кешами HTTP / 1.0***\
+`Pragma: no-cache` ***Он используется для обратной совместимости с кешами HTTP / 1.0***
 
 `Connection #1 to host rgups.ru left intact` ***означает, что сервер оставил соединение открытым***\
-`Could not resolve host: wp` ***
-* Closing connection 2
-curl: (6) Could not resolve host: wp
+`Could not resolve host: wp` ***нет ответа от хоста***\
+`Closing connection 2` ***закрытие соединения***
