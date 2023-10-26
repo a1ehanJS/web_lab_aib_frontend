@@ -1,10 +1,138 @@
-.hat
+html
+{
+    max-width: 100%;
+}
+
+.hat 
 {
     text-align: center;
 }
 
-.hat img
+#logo
 {
-    height: 300px;
-    width: 300px;
+    height: 120px;
+    width: 275px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
 }
+
+p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a
+{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+#content
+{
+    margin-right: 80px;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.main-catalog
+{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+h1
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item p
+{
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.main-catalog img
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 165px;
+    width: 280px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.promo-catalog 
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.item:hover
+{
+    opacity: 0.25;
+}
+
+.promo-catalog img
+{
+    height: 81px;
+    width: 144px;
+    border-radius: 5px;
+    margin-top: 12px;
+    max-width: 100%;
+}
+
+body
+{
+    background-color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
