@@ -86,7 +86,7 @@ h2
 {
     font-family:'Courier New', Courier, monospace;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
 
 .main-catalog img
@@ -123,7 +123,7 @@ h2
     height: 81px;
     width: 144px;
     border-radius: 5px;
-    margin-top: 12px;
+    margin-top: 0px;
     max-width: 100%;
 }
 
@@ -136,3 +136,180 @@ body
     margin-bottom: 0px;
 }
 
+@media (min-width: 414px)
+ {
+    #logo {
+      width: 350px;
+      height: auto;
+    }
+
+    #content
+    {
+        font-size: 25px;
+    }
+
+    #site
+    {
+        font-size: 25px;
+    }
+    
+    h1
+    {
+        font-size: 25px;
+    }
+
+    .main-catalog img
+    {
+        width: 350px;
+        height: auto;
+    }
+
+    .promo-catalog img
+    {
+        width: 190px;
+        height: auto;
+    }
+}
+
+@media (min-width: 640px)
+ {
+    #logo {
+      width: 450px;
+      height: auto;
+    }
+
+    #content
+    {
+        font-size: 30px;
+    }
+
+    #site
+    {
+        font-size: 30px;
+    }
+    
+    h1
+    {
+        font-size: 35px;
+    }
+
+    .main-catalog img
+    {
+        width: 550px;
+        height: auto;
+    }
+
+    .promo-catalog img
+    {
+        width: 290px;
+        height: auto;
+    }
+    h2
+    {
+        font-size: 27px;
+    }
+
+    .promo-catalog p
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    #logo
+     {
+        width: 200px;
+        height: auto;
+        float: left;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .hat p
+    {
+        text-align: right;
+        margin-right: 3px;
+    }
+
+    .hat hr
+    {
+        width: 350px;
+        margin-right:0px;
+    }
+
+    body
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    h1
+    {
+        margin-top: 50px;
+        text-align: left;
+        font-size: 50px;
+    }
+
+    .main-catalog
+    {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .main-catalog p
+    {
+        margin-bottom: 24px;
+    }
+
+    .main-catalog img
+    {
+        width: 370px;
+        height: auto;
+    }
+
+    h2
+    {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .promo-catalog
+    {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .promo-catalog img
+    {
+        width: 280px;
+        height: auto;
+    }
+
+    .promo-catalog p
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .main-catalog img
+    {
+        width: 420px;
+        height: auto;
+    }
+
+    .promo-catalog p
+    {
+        font-size: 27px;
+    }
+
+    .promo-catalog img
+    {
+        width: 320px;
+        height: auto;
+    }
+}
