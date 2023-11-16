@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+   //задание 1
+    console.log("\nзадание 1");
+    var apple = 10;
+
+    alert(apple);
+    console.log(apple);
+
+    var condition = 'hello world';
+
+    console.log('Good game is ' + condition);
+
+
+    //задание 2
+    console.log("\nзадание 2");
+    let number = 5;
+    let string = '100';
+    let boolean = true;
+
+    console.log(number + string);
+    console.log(number + boolean);
+    console.log(string + number);
+    console.log(string + boolean);
+    console.log(boolean + number);
+    console.log(boolean + string);
+
+
+    //задание 3
+    console.log("\nзадание 3");
+    console.log("вызов сообщения");
+    let arr = new Array(10);
+    for (let i = 0; i < 10; i++) 
+    {
+      let randnum = Math.floor(Math.random() * 20) - 10
+      arr.push(randnum)
+    }
+
+    const positive_num = arr.filter((item) => {
+      return item > 0
+    })
+
+    //задание 4.1
+    console.log("\nзадание 4.1");
+    function getRandomNumber() {
+    return Math.floor(Math.random() * 100) + 1; // случайное число от 1 до 100
+    
+  }
+
+var randomNumber = getRandomNumber();
+console.log(randomNumber);
+
+    //задание 4.2
+    console.log("\nзадание 4.2");
+    const multiplyArrayByNumber = (array, number) => array.map(element => element * number);
+
+const inputArray = [1, 2, 3, 4, 5];
+const multiplier = 2;
+const resultArray = multiplyArrayByNumber(inputArray, multiplier);
+console.log(resultArray);
+    //задание 4.3
+    console.log("\nзадание 4.3");
+    var generateRandomWord = function() {
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    var word = '';
+    var wordLength = Math.floor(Math.random() * 10) + 1; // случайная длина слова от 1 до 10 символов
+
+  for (var i = 0; i < wordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * alphabet.length);
+    var randomChar = alphabet[randomIndex];
+    word += randomChar;
+  }
+
+  return word;
+};
+
+var randomWord = generateRandomWord();
+console.log(randomWord);
+
+//задание 5
+console.log("\nзадание 5");
+
+let person = {};//создание пустого объекта
+
+person.firstName = "Александр";//добавляем поля в объект
+person.surname = "Ковальчук";
+person.patronymic = "Витальевич";
+person.birthday = "2003";
+person.hobby = "Музыка";
+person.group = "АИБ-3-043";
+
+person.getInfo = function() {//добавляем метод вывода
+  let fullName = this.surname + " " + this.firstName + " " + this.patronymic;
+  let birthdayYear = new Date(this.birthday).getFullYear();
+  let age = new Date().getFullYear() - birthdayYear;
+  let info = `${fullName}, родился в ${birthdayYear}, увлекается ${this.hobby}, возраст ${age} лет`;
+  return info;
+};
+
+alert(person.getInfo());//вызов метода и вывод через alert
+
+let salaries = {//создание объектов с зарплатами
+  "Иванов": 5000,
+  "Петров": 6000,
+  "Сидоров": 4000,
+  "Смирнов": 5500,
+  "Артемьев": 4500,
+  "Титов": 7000,
+  "Тихомиров": 3500,
+  "Каспарян": 4800,
+  "Гурьянов": 5200,
+  "Бутусов": 4300
+};
+
+let result_salary = 0;
+for (let key in salaries) {
+  result_salary += salaries[key];
+}
+
+console.log("Общая зарплата сотрудников:", result_salary);
+
+</script>
+</body>
+</html>
