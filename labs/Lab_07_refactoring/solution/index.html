@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+   //задание 1
+console.log("задание 1");
+
+let fst = prompt('var one');
+let snd = prompt('var two');
+
+fst === snd ? console.log('equally') : console.log('different');
+
+let thrd = 'world';
+let sum = fst + snd;
+
+console.log(sum);
+
+//задание 2
+console.log("\nзадание 2");
+
+let f = new Array('apple', 'strawberry', 'blueberry', 'raspberry', 'lemon');
+
+for (let i = 0; i < f.length; i++)
+{
+    console.log(f[i]);
+
+    if (f[i] === 'apple') {
+      console.log(f[i] + ' green');
+    }
+
+    else if (f[i] === 'strawberry') {
+      console.log(f[i] + ' red');
+    }
+
+    else if (f[i] === 'blueberry') {
+      console.log(f[i] + ' blue');
+    }
+
+    else if (f[i] === 'raspberry') {
+      console.log(f[i] + ' light red');
+    }
+
+    else if (f[i] === 'lemon') {
+      console.log(f[i] + ' yellow');
+    }
+}
+
+//задание 3
+let pers_num = parseFloat(prompt('Введите кол-во человек', undefined));
+
+while (isNaN(pers_num)) {
+    pers_num = parseFloat(prompt('Введите кол-во человек', undefined));
+}
+
+let k = parseFloat(prompt('Введите зарплату на человека', undefined));
+
+while (isNaN(k)) {
+    k = parseFloat(prompt('Введите зарплату на человека', undefined));
+}
+
+const totalCost = pers_num * k;
+alert('Затраты на ЗП: ' + totalCost);
+
+//задание 4
+//Скрипт проводит анализ имеющихся студентов в массиве. Выводит среднюю оценку и список плохих студентов
+const students = [
+  {FIO: 'Каспарян Ю.Д.', Ocenka: 5},
+  {FIO: 'Тихомиров И.Р.', Ocenka: 3.4},
+  {FIO: 'Гурьянов Г.К.', Ocenka: 9},
+  {FIO: 'Цой В.Р', Ocenka: 3},
+  {FIO: 'Титов А.В', Ocenka: 3.4}
+];
+
+let totalScore = 0;
+let count = 0;
+const badStudents = [];
+
+for (let i = 0; i < students.length; i++) {
+
+  const student = students[i];
+
+  if (student.Ocenka > 5 || student.Ocenka < 0) {
+    console.log(`Значение ${student.Ocenka} не учитывается, так как не соответствует допустимым значениям.`);
+    continue;
+  }
+
+  if (student.Ocenka < 4) {
+    badStudents.push(student);
+  }
+
+  totalScore += student.Ocenka;
+  count++;
+}
+
+const averageScore = totalScore / count;
+ 
+console.log(`Средняя оценка: ${averageScore}`);
+console.log('Плохие студенты:');
+
+if (badStudents.length === 0) {
+  console.log('Таких нет');
+} else {
+  badStudents.forEach(student => {
+    console.log(`ФИО: ${student.FIO}, Оценка: ${student.Ocenka}`);
+  });
+}
+
+</script>
+</body>
+</html>
