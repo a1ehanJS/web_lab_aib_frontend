@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+  <meta charset = "UTF-8"/>
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0"/>
+  <title>RGB buttons</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+  <script src = "app.js"></script>
+  <div class = "buttons"><!--создали класс buttons для удобства позиционирования в файле style.css-->
+    <div id = "Red">
+      <button onclick = "BG_changeColor('red')">Красный</button><!--вызов функции изменения цвета фона на Красный-->
+    </div>
+    <div id = "Green">
+      <button onclick = "BG_changeColor('green')">Зеленый</button><!--вызов функции изменения цвета фона на Зеленый-->
+    </div>
+      <div id = "Blue">
+        <button onclick = "BG_changeColor('blue')">Синий</button><!--вызов функции изменения цвета фона на Синий-->
+      </div>
+    </div>
+</body>
+</html>
