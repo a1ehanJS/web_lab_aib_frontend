@@ -1,0 +1,27 @@
+
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -30px;
+}
+
+button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#increase{
+  margin-left: 49px;
+}
+
+#decrease{
+  margin-left: -43px;
+}
