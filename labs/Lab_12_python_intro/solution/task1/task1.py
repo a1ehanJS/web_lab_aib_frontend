@@ -1,18 +1,19 @@
-print("введите число строк:")
-n = int(input())
-print("введите число столбцов:")
-m = int(input())
+def countRoutes(N, M):
+    dp = [[0]*M for _ in range(N)]
+    dp[0][0] = 1
 
-a = []
-for i in range(n):
-    a.append([0] * m)
-a[0][0] = 1
+    for i in range(N):
+        for j in range(M):
+            if i - 2 >= 0 and j - 1 >= 0:
+                dp[i][j] += dp[i - 2][j - 1]
+            if j - 2 >= 0 and i - 1 >= 0:
+                dp[i][j] += dp[i - 1][j - 2]
 
-for i in range(n):
-    for j in range(m):
-        if i - 2 >= 0 and j - 1 >= 0:
-            a[i][j] += a[i - 2][j - 1]
-        if i - 1 >= 0 and j - 2 >= 0:
-            a[i][j] += a[i - 1][j - 2]
+    return dp[N - 1][M - 1]
 
-print("Число возможных маршрутов:", a[n - 1][m - 1])
+
+N = int(input())
+M = int(input())
+
+result = countRoutes(N, M)
+print(result)
