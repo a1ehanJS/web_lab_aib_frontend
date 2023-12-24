@@ -1,5 +1,5 @@
 def countRoutes(N, M):
-    dp = [[0]*M for _ in range(N)]
+    dp = [[0] * M for _ in range(N)]
     dp[0][0] = 1
 
     for i in range(N):
