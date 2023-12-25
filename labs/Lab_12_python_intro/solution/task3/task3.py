@@ -1,26 +1,26 @@
-s = input()
-mx = 0
+string_for_input = input()
+maximum = 0
 dictionary = {}
-for t in s:
-    if t == ' ':
+for tab in string_for_input:
+    if tab == ' ':
         continue
-    if t in dictionary:
-        dictionary[t] += 1
-        mx = max(mx, dictionary[t])
+    if tab in dictionary:
+        dictionary[tab] += 1
+        maximum = max(maximum, dictionary[tab])
     else:
-        dictionary[t] = 1
+        dictionary[tab] = 1
 
-ch = list(dictionary.keys())
-ch.sort()
-i = mx
-while i > 0:
+lst = list(dictionary.keys())
+lst.sort()
+number = maximum
+while number > 0:
     str = ""
-    for tt in ch:
-        if dictionary[tt] >= i:
+    for count in lst:
+        if dictionary[count] >= number:
             str += '#'
         else:
             str += ' '
     print(str)
-    i -= 1
-for c in ch:
+    number -= 1
+for c in lst:
     print(c, end = '')
