@@ -22,7 +22,7 @@ class XlsAnalyticPaymentWriter:
         col = 0
 
         for i in range(0, len(self.ANALYTICS_BLOCKS_CLASSES)):
-            worksheet.set_column(i, i, 30)
+            worksheet.set_column("A:ZZ", 30)
             block_instance = self.ANALYTICS_BLOCKS_CLASSES[i](worksheet, workbook, row, col, self.data)
             block_instance.write_header()
             block_instance.write_data()
